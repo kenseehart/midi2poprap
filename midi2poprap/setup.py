@@ -8,7 +8,7 @@ setup(
     author = 'Ken Seehart',
     author_email = 'ken@seehart.com',
     url = 'https://github.com/kenseehart/midi2poprap',
-    download_url = '',
+    download_url = 'https://github.com/kenseehart/midi2poprap/archive/refs/tags/v1.0.0.tar.gz',
     keywords = ['tag1', 'tag2'],
     classifiers = [],
 )
