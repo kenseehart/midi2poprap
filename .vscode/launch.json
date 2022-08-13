@@ -1,0 +1,17 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "midi2poprap",
+      "type": "python",
+      "request": "launch",
+      "program": "midi2poprap/midi2poprap.py",
+      "args": ["-e", "-v", "midi2poprap/samples/doremi.mid", "midi2poprap/samples/doremi.pdf"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}
