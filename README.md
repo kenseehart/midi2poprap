@@ -6,7 +6,7 @@ See Simone's amazing bubble wrapping popping musical masterpiece: https://www.yo
 
 This tool converts midi to the industry standard format for bubble wrap musical devices, which happens to be compatible with most printers.
 
-![Industry standard bubble wrap notation](midi2poprap/samples/sample.png)
+![Industry standard bubble wrap notation](https://github.com/kenseehart/midi2poprap/blob/main/midi2poprap/samples/doremi.png)
 
 
 ## Installation and getting started
