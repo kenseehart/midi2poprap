@@ -7,3 +7,9 @@ See Simone's amazing bubble wrapping popping musical masterpiece: https://www.yo
 This tool converts midi to the industry standard format for bubble wrap musical devices, which happens to be compatible with most printers.
 
 
+## Installation and getting started
+
+`pip install midi2poprap`
+
+`python3 -m midi2poprap music.mid output.png`
+
