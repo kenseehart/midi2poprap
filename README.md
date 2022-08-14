@@ -18,3 +18,5 @@ This tool converts midi to the industry standard format for bubble wrap musical 
 ## Let me know if it works for you
 
 If you have a midi file that doesn't work, please send it to me. It needs a bit of work to autotranspose, etc.
+
+#midipoprap
