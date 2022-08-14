@@ -9,7 +9,7 @@
       "type": "python",
       "request": "launch",
       "program": "midi2poprap/midi2poprap.py",
-      "args": ["-e", "-v", "midi2poprap/samples/minuet.mid", "midi2poprap/samples/minuet.png"],
+      "args": ["-e", "-v", "-s", "midi2poprap/samples/popcorn.mid", "midi2poprap/samples/popcorn.png"],
       "console": "integratedTerminal",
       "justMyCode": false
     }

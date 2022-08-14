@@ -59,7 +59,7 @@ def make_image(pops:List[Tuple[int,int]], cell_size:int, font:str, font_size, x0
 
 note_names =  ['C', 'C#', 'D', 'D#', 'E', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
-major = [0,2,4,5,7,9,11,12,14,16]
+major = [0,2,4,5,7,9,11,12,14,16,17,18]
 major_index = {k:i for i, k in enumerate(major)}
 
 def get_scale_note(note:int, tonic:int, nrange:int):
@@ -109,7 +109,7 @@ def pops2midi(pops:List[List[int]]) -> MidiFile:
     mid.tracks.append(track)
     track.append(Message('program_change', program=12, time=0))
 
-    dt=80
+    dt=240
     tonic=62
     notes = []
     for (t, n) in pops:
@@ -144,7 +144,7 @@ def pops2imagefile(pops, outfile:str):
 
 def make_sample(midifile:str, outfile:str):
     # Minuet in G, JS Bach  
-    pops = [
+    minuet_pops = [
         (0, 4), (0, 2), (0, 0),
         (2, 0),
         (3, 1),
@@ -163,10 +163,45 @@ def make_sample(midifile:str, outfile:str):
         (22, 0),
     ]
 
-    midi:MidiFile = pops2midi(pops)
+    # Popcorn by Hot Butter, arranged for bubble pop by Ken Seehart
+    popcorn_pops = [
+        (0, 8),
+        (1, 7),
+        (2, 8),
+        (3, 5),
+        (4, 3),
+        (5, 5), 
+        (6, 1),
+
+        (8, 8),
+        (9, 7),
+        (10, 8),
+        (11, 5),
+        (12, 3),
+        (13, 5), 
+        (14, 1),
+
+        (16, 8),
+        (17, 9),
+        (18, 10),
+        (19, 9),
+        (20, 10),
+        (21, 8),
+        (22, 9),
+        (23, 8),
+        (24, 9),
+        (25, 7),
+        (26, 8),
+        (27, 7),
+        (28, 8),
+        (29, 7),
+        (30, 8),
+    ]
+
+    midi:MidiFile = pops2midi(popcorn_pops)
     midi.save(midifile)
 
-    pops2imagefile(pops, outfile)
+    pops2imagefile(popcorn_pops, outfile)
 
 
 def midi2poprap(midifile:str, outfile:str, tonic:int=62, nrange:int=11):
